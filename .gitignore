@@ -1,0 +1,15 @@
+# Node dependencies (NEVER commit this!)
+node_modules/
+focusmate-frontend/node_modules/
+build/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+
+# IDE files
+.vscode/
+.idea/
