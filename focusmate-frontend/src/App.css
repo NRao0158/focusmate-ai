@@ -1,0 +1,75 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Status Badges */
+.status-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.status-pill {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.online { background-color: #28a745; }
+.offline { background-color: #dc3545; }
+.focused { background-color: #007bff; }
+.distracted { background-color: #e0a800; }
+
+.webcam-box {
+  margin: 20px auto;
+  display: inline-block;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.test-btn {
+  display: block;
+  margin: 15px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* The Full Screen Blur */
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Dim background */
+  backdrop-filter: blur(20px);      /* Standard Blur */
+  -webkit-backdrop-filter: blur(20px); /* Safari/Chrome Blur */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.blur-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.alert-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  color: #333;
+}
