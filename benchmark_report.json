@@ -1,0 +1,119 @@
+{
+    "model": "OpenCV Haar Cascade (haarcascade_frontalface_default)",
+    "parameters": {
+        "scaleFactor": 1.1,
+        "minNeighbors": 4,
+        "minSize": [
+            40,
+            40
+        ]
+    },
+    "metrics": {
+        "total_test_frames": 200,
+        "correct_predictions": 181,
+        "accuracy_percentage": 90.5,
+        "false_negatives": 9,
+        "false_positives": 10
+    },
+    "failure_cases": {
+        "false_negatives": [
+            {
+                "file": "focused_033.jpg",
+                "expected_face": true,
+                "detected_faces": 0
+            },
+            {
+                "file": "focused_035.jpg",
+                "expected_face": true,
+                "detected_faces": 0
+            },
+            {
+                "file": "focused_036.jpg",
+                "expected_face": true,
+                "detected_faces": 0
+            },
+            {
+                "file": "focused_037.jpg",
+                "expected_face": true,
+                "detected_faces": 0
+            },
+            {
+                "file": "focused_038.jpg",
+                "expected_face": true,
+                "detected_faces": 0
+            },
+            {
+                "file": "focused_039.jpg",
+                "expected_face": true,
+                "detected_faces": 0
+            },
+            {
+                "file": "focused_040.jpg",
+                "expected_face": true,
+                "detected_faces": 0
+            },
+            {
+                "file": "focused_041.jpg",
+                "expected_face": true,
+                "detected_faces": 0
+            },
+            {
+                "file": "focused_071.jpg",
+                "expected_face": true,
+                "detected_faces": 0
+            }
+        ],
+        "false_positives": [
+            {
+                "file": "distracted_001.jpg",
+                "expected_face": false,
+                "detected_faces": 1
+            },
+            {
+                "file": "distracted_033.jpg",
+                "expected_face": false,
+                "detected_faces": 1
+            },
+            {
+                "file": "distracted_036.jpg",
+                "expected_face": false,
+                "detected_faces": 1
+            },
+            {
+                "file": "distracted_037.jpg",
+                "expected_face": false,
+                "detected_faces": 2
+            },
+            {
+                "file": "distracted_038.jpg",
+                "expected_face": false,
+                "detected_faces": 2
+            },
+            {
+                "file": "distracted_039.jpg",
+                "expected_face": false,
+                "detected_faces": 2
+            },
+            {
+                "file": "distracted_070.jpg",
+                "expected_face": false,
+                "detected_faces": 1
+            },
+            {
+                "file": "distracted_071.jpg",
+                "expected_face": false,
+                "detected_faces": 1
+            },
+            {
+                "file": "distracted_072.jpg",
+                "expected_face": false,
+                "detected_faces": 1
+            },
+            {
+                "file": "distracted_073.jpg",
+                "expected_face": false,
+                "detected_faces": 1
+            }
+        ]
+    }
+}
